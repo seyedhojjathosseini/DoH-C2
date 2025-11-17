@@ -49,7 +49,6 @@ Server supports multiple queued commands per session via REST API.
 
 ### 1️⃣ Start the DoH server
 
-```bash
 python flask_doh_server.py --host 0.0.0.0 --port 443
 Server will listen on:
 https://<server-ip>:443/dns-query

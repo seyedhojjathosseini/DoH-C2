@@ -39,8 +39,11 @@ Server supports multiple queued commands per session via REST API.
 
 ## 📁 Project Structure
 ├── doh_agent.py # DoH Agent (client)
+
 ├── flask_doh_server.py # DoH server + command queue
+
 ├── results/ # Auto-created, stores reconstructed outputs
+
 └── README.md
 
 ---
@@ -96,14 +99,21 @@ Chunked exfiltration patterns
 DoH traffic to non-standard endpoints
 
 Useful for:
+
 SOC training
+
 Threat hunting practice
+
 Detection engineering validation
+
 Blue Team exercises
+
 Red/Blue joint simulations
 
 ## 🔐 Disclaimer
 
 This project is intended only for isolated, controlled lab environments
+
 Unauthorized use outside training networks is prohibited
+
 Ensure compliance with all organizational policies and applicable laws

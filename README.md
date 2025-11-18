@@ -104,6 +104,6 @@ Red/Blue joint simulations
 
 ## 🔐 Disclaimer
 
-This project is intended only for isolated, controlled lab environments.
-Unauthorized use outside training networks is prohibited.
-Ensure compliance with all organizational policies and applicable laws.
+This project is intended only for isolated, controlled lab environments
+Unauthorized use outside training networks is prohibited
+Ensure compliance with all organizational policies and applicable laws

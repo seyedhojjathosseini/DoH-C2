@@ -56,7 +56,7 @@ https://<server-ip>:443/dns-query
 ### 2️⃣ Run the agent
 Example:
 python doh_agent.py \
-  --doh https://192.168.72.199:8443/dns-query \
+  --doh https://192.168.72.199:443/dns-query \
   --domain test.local \
   --session cmpjgd \
   --min-interval 5 \
@@ -64,16 +64,16 @@ python doh_agent.py \
 
 ### 3️⃣ Send commands
 You can push commands using curl:
-curl -k -X POST https://<server-ip>:8443/commands \
+curl -k -X POST https://<server-ip>:443/commands \
   -H "Content-Type: application/json" \
   -d '{"session":"cmpjgd","command":"whoami"}'
 
 More examples:
-curl -k -X POST https://<server-ip>:8443/commands \
+curl -k -X POST https://<server-ip>:443/commands \
   -H "Content-Type: application/json" \
   -d '{"session":"cmpjgd","command":"dir"}'
 
-curl -k -X POST https://<server-ip>:8443/commands \
+curl -k -X POST https://<server-ip>:443/commands \
   -H "Content-Type: application/json" \
   -d '{"session":"cmpjgd","command":"ipconfig /all"}'
 

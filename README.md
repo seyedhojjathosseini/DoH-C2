@@ -53,7 +53,7 @@ python flask_doh_server.py --host 0.0.0.0 --port 443
 Server will listen on:
 https://<server-ip>:443/dns-query
 
-2️⃣ Run the agent
+### 2️⃣ Run the agent
 Example:
 python doh_agent.py \
   --doh https://192.168.72.199:8443/dns-query \
@@ -62,7 +62,7 @@ python doh_agent.py \
   --min-interval 5 \
   --max-interval 7
 
-3️⃣ Send commands
+### 3️⃣ Send commands
 You can push commands using curl:
 curl -k -X POST https://<server-ip>:8443/commands \
   -H "Content-Type: application/json" \
@@ -77,14 +77,14 @@ curl -k -X POST https://<server-ip>:8443/commands \
   -H "Content-Type: application/json" \
   -d '{"session":"cmpjgd","command":"ipconfig /all"}'
 
-📦 Output Storage
+## 📦 Output Storage
 Outputs are written to:
 results/<session>/<timestamp>_<cmd_index>.txt
 
 Example:
 results/cmpjgd/2025-11-17_091706_cmd1.txt
 
-📊 SOC Detection Use-Cases
+## 📊 SOC Detection Use-Cases
 
 This simulated C2 framework is ideal for testing detection of:
 DoH-based beaconing
@@ -102,7 +102,7 @@ Detection engineering validation
 Blue Team exercises
 Red/Blue joint simulations
 
-🔐 Disclaimer
+## 🔐 Disclaimer
 
 This project is intended only for isolated, controlled lab environments.
 Unauthorized use outside training networks is prohibited.
